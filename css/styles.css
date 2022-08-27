@@ -28,7 +28,48 @@ body {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
+/* RESET */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  outline: 1px solid red;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* Header */
+
+.page-header {
+  color: var(--white-color-text);
+  border-bottom: 1px solid #ececec;
+}
 
 .logo {
   color: var(--nav-color);
@@ -49,31 +90,24 @@ body {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
 }
-ul {
-  list-style: none;
-}
 
-/* Button */
-.button {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  border: none;
-  cursor: pointer;
-  font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
+/* Header Site nav */
+.main-nav {
   display: flex;
   align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
 }
 
-/* Section Titles */
-.section-title {
-  color: var(--title-text-color);
+.nav-list {
+  display: flex;
+  margin-left: 93px;
 }
-/* Header Site nav */
+.nav-list .item {
+  margin-right: 50px;
+}
+.nav-list .item:last-child {
+  margin-right: 0;
+}
+
 .nav-link {
   color: var(--title-text-color);
   text-decoration: none;
@@ -81,6 +115,7 @@ ul {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  display: block;
 }
 .nav-link .current {
   color: var(--accent-color);
@@ -91,6 +126,14 @@ ul {
   color: var(--accent-color);
 }
 
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.contacts .item + .item {
+  margin-left: 50px;
+}
 .contacts-link {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -105,8 +148,9 @@ ul {
 }
 
 /* Hero section */
-.hero-section {
+.hero {
   background-color: var(--background-top-footter-color);
+  padding: 200px 0;
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -117,6 +161,27 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+/* Button */
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  padding: 10px 32px;
+  min-width: 216px;
+  min-height: 50px;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
 }
 
 /* Features */

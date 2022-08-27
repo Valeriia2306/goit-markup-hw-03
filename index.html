@@ -17,65 +17,77 @@
       rel="stylesheet"
     />
     <!-- Link CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <nav>
+    <header class="page-header">
+    <div class="container">
+      <nav class="nav main-nav">
         <a class="logo" href="/index.html"
           ><span class="web">Web</span>Studio</a
         >
-        <ul class="nav">
-          <li><a href="" class="nav-link current">Студія</a></li>
-          <li><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
-          <li><a href="" class="nav-link">Контакти</a></li>
+        <ul class="nav-list list">
+          <li class="item"><a href="" class="nav-link current">Студія</a></li>
+          <li class="item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
+          <li class="item"><a href="" class="nav-link">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="contacts">
-        <li>
+        <ul class="contacts list">
+        <li class="item">
           <a href="mailto:info@devstudio.com" class="contacts-link"
             >info@devstudio.com</a
           >
         </li>
-        <li>
+        <li class="item">
           <a href="tel:+380961111111" class="contacts-link"
             >+38 096 111 11 11</a
           >
         </li>
       </ul>
+      </div>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero section">
+        <div class="container">
         <h1 class="hero-title">
           Ефективні рішення для<br />
           вашого бізнесу
         </h1>
         <button type="button" class="button">Замовити послугу</button>
+        </div>
       </section>
-      <section class="features">
+      <section class="features section">
+        <div class="container">
         <h2 class="features-heading visually-hidden">Особливості WebStudio</h2>
         <ul class="features-list">
-          <li>
+          <li  class="list">
             <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="features-text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li>
+          <li class="list">
             <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="features-text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li>
+          <li class="list">
             <h3 class="features-title">ПЛАНУВАННЯ</h3>
             <p class="features-text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li>
+          <li class="list">
             <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="features-text">
               Значимість цих проблем настільки очевидна, що реалізація планових
@@ -83,8 +95,10 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
-      <section>
+      <section class="section">
+        <div class="container">
         <h2 class="work-title">Чим ми займаємося</h2>
         <ul>
           <li class="work-list">
@@ -109,8 +123,10 @@
             />
           </li>
         </ul>
+        </div>
       </section>
-      <section class="team">
+      <section class="team section">
+        <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul>
           <li>
@@ -150,9 +166,11 @@
             <p lang="en" class="team-profession">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
+       <div class="container">
       <a class="logo white" href="/index.html"
         ><span class="web">Web</span>Studio</a
       >
@@ -177,6 +195,7 @@
             >
           </li>
         </ul>
+        </div>
       </address>
     </footer>
   </body>
