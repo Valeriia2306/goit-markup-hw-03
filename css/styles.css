@@ -162,7 +162,7 @@ ul {
 /* Hero section */
 .hero-section {
   background-color: var(--background-top-footter-color);
-  width: 1600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -273,7 +273,6 @@ ul {
 /* Our team */
 .team {
   background-color: var(--background-color-buttom);
-  padding-top: 0;
   text-align: center;
 }
 .team-item {
@@ -324,9 +323,6 @@ ul {
 }
 .addres {
   font-style: normal;
-}
-
-.addres-list {
   margin-top: 20px;
 }
 
@@ -364,6 +360,7 @@ ul {
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .item-btn + .item-btn {
   margin-left: 8px;
 }
