@@ -88,7 +88,6 @@ ul {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
 }
-
 .logo.white {
   color: var(--primary-white-color);
   margin-bottom: 20px;
@@ -326,6 +325,11 @@ ul {
 .addres {
   font-style: normal;
 }
+
+.addres-list {
+  margin-top: 20px;
+}
+
 .addres-link-map {
   color: var(--primary-white-color);
   text-decoration: none;
